@@ -103,7 +103,7 @@ const EmailList = () => {
   
   const getEmails = async () =>{
     try {
-      const res = await axios.get('https://gmail.googleapis.com/gmail/v1/users/me/messages?maxResults=30', {
+      const res = await axios.get('https://gmail.googleapis.com/gmail/v1/users/me/messages?maxResults=10', {
         headers: {
           Authorization: `Bearer ${accessToken}`,
         },
